@@ -9,4 +9,4 @@ MyNetwork 부분에 private network 이름을 적어주시면 됩니다.
 기본적으로 acitoolkit을 설치되어야 하며 설치를 위해서는 github.com/datacenter/acitoolkit 에서 확인하세요 
 APIC 정보는 credentials.py 를 수정하셔서 id, password, http or https를 설정하세요 
 
-#python build_tenant_with_csv.py 만 입력하시면 mydata.csv 내용일 읽어서 처리하게 tenant를 생성하게 됩니다. 
+python build_tenant_with_csv.py 만 입력하시면 mydata.csv 내용일 읽어서 처리하게 tenant를 생성하게 됩니다. 
