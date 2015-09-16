@@ -1,0 +1,9 @@
+tenant,app,epg,network,bd,gateway
+MyTenant,MyApp,xxx1,MyNetwork,zzz1,172.16.0.1/24
+,,xxx2,,zzz2,172.16.1.1/24
+,,xxx3,,zzz3,172.16.2.1/24
+,,xxx4,,zzz4,172.16.3.1/24
+,,xxx5,,zzz5,172.16.4.1/24
+,,xxx6,,zzz6,172.16.5.1/24
+,,xxx7,,zzz7,172.16.6.1/24
+,,xxx8,,zzz8,172.16.7.1/24
