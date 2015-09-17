@@ -30,6 +30,13 @@ def build_request_body(data):
 		subnet.set_addr( epgbd['gateway'])
 		bd.add_subnet( subnet)
 		epg.add_bd(bd)
+		vlan = epgbd['vlan']
+		leaves = epgbd['leaves']
+		for leaf in leaves.split('|'):
+			l2if = L2Interface('vlan%s_on_if'%(vlan), 'vlan', vlan)
+			lports = leaf.split('-')
+			l2if.attach( Interface( 'eth', '1', lports[0], lports[1], lports[2]))
+			epg.attach( l2if)
 
 	return tenant
 
